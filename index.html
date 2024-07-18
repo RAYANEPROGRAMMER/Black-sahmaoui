@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAYVN's portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="C:\Users\pc\Downloads\sillouhete.png">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, cyan, magenta, pink, yellow);
+            background: linear-gradient(135deg, cyan, magenta, yellow);
             color: white;
             margin: 0;
             padding: 0;
@@ -22,6 +23,12 @@
             margin: 0;
             font-size: 3em;
         }
+        header img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
         header p {
             margin: 10px 0 0;
             font-size: 1.2em;
@@ -32,7 +39,7 @@
             padding: 20px;
         }
         section {
-            background: rgba(255, 255, 255, 0.19);
+            background: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
@@ -63,10 +70,45 @@
             font-size: 1em;
             cursor: pointer;
         }
+        .donate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .donate-item {
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .donate-item h3 {
+            margin: 0 0 10px;
+        }
+        .donate-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #928dab;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        footer {
+            background: rgba(15, 15, 15, 0.5);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            width: auto;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="C:\Users\pc\Downloads\sillouhete.png" alt="Profile Picture">
         <h1>My portfolio</h1>
         <p>Python, C#, Arduino C, Roblox Lua, UI/UX</p>
     </header>
@@ -80,18 +122,19 @@
             <div class="portfolio-item">
                 <h3>Roblox Portfolio</h3>
                 <p>
-                    Hi, im Rayan a roblox dev and currently working on a game with the <a href="https://www.roblox.com/groups/34567659/Robbing-Game-Studios#!/about" target="_blank">RGS developers</a>. I mainly do UI and i can code it, but im not a good scripter.
+                    Hi, im Rayan a roblox dev and currently working on a game with the <a href="https://www.roblox.com/groups/34567659/Robbing-Game-Studios#!/about" target="_blank">RGS developers</a>. I mainly do UI and i can code it, but im not a good scripter. The style that i work with is cartoony UI and futuristic but simple UI.
                 </p>
             </div>
             <div class="portfolio-item">
                 <h3>Some of my work</h3>
-                <img src="Capture d’écran(15)s.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="Capture d’écran(24)r.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="Capture d’écran(26)l.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="Capture d’écran (45).png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="GamePass Template.png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
-                <img src="New Project (26).png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
-                <img src="New Project (29).png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran(15)s.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran(24)r.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran(26)l.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran (45).png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Downloads\GamePass Template.png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Downloads\New Project (29).png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Downloads\New Project (26).png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
+                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran (35).png" alt="SOME OF MY USER ITREFACE, its bad but trust me its good" style="max-width: 100%; height: auto; border-radius: 10px;">
             </div>
         </section>
         <section id="contact">
@@ -109,6 +152,30 @@
                 <button type="submit">Send</button>
             </form>
         </section>
+        <section id="donate">
+            <h2>Donate</h2>
+            <div class="donate-grid">
+                <div class="donate-item">
+                    <h3>50 Robux</h3>
+                    <a href="https://www.roblox.com/game-pass/864430248" class="donate-button">Donate</a>
+                </div>
+                <div class="donate-item">
+                    <h3>100 Robux</h3>
+                    <a href="https://www.roblox.com/game-pass/864187681" class="donate-button">Donate</a>
+                </div>
+                <div class="donate-item">
+                    <h3>500 Robux</h3>
+                    <a href="https://www.roblox.com/game-pass/864320403" class="donate-button">Donate</a>
+                </div>
+                <div class="donate-item">
+                    <h3>1000 Robux</h3>
+                    <a href="https://www.roblox.com/game-pass/864305443" class="donate-button">Donate</a>
+                </div>
+            </div>
+        </section>
     </div>
+    <footer>
+        &copy; 2024 RAYVN inc. All rights reserved.
+    </footer>
 </body>
 </html>
