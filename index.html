@@ -16,12 +16,14 @@
         }
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 10px 0;
             background: rgba(0, 0, 0, 0.5);
+            border-radius: 0px 0px 10px 10px;
         }
         header h1 {
             margin: 0;
             font-size: 3em;
+            margin-left: auto;
         }
         header img {
             max-width: 100px;
@@ -55,7 +57,7 @@
             margin-bottom: 5px;
         }
         .contact-form input, .contact-form textarea {
-            width: 100%;
+            width: 98%;
             padding: 10px;
             margin-bottom: 10px;
             border: none;
@@ -69,6 +71,10 @@
             color: white;
             font-size: 1em;
             cursor: pointer;
+        }
+        .contact-form button:hover {
+            color: white;
+            background: rgba(0, 0, 0, 0.2);
         }
         .donate-grid {
             display: grid;
@@ -96,6 +102,40 @@
             display: inline-block;
             margin-top: 10px;
         }
+        .donate-button:hover {
+            color: white;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .wwm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .wwm-item {
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .wwm-item h3 {
+            margin: 0 0 10px;
+        }
+        .wwm-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #928dab;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .wwm-button:hover {
+            color: white;
+            background: rgba(0, 0, 0, 0.2);
+        }
         footer {
             background: rgba(15, 15, 15, 0.5);
             padding: 20px;
@@ -109,8 +149,8 @@
 <body>
     <header>
         <img src="C:\Users\pc\Downloads\sillouhete.png" alt="Profile Picture">
-        <h1>My portfolio</h1>
-        <p>Python, C#, Arduino C, Roblox Lua, UI/UX</p>
+        <h1>RAYVN's portfolio</h1>
+        <p>UI/UX designer for roblox</p>
     </header>
     <div class="container">
         <section id="portfolio">
@@ -124,17 +164,6 @@
                 <p>
                     Hi, im Rayan a roblox dev and currently working on a game with the <a href="https://www.roblox.com/groups/34567659/Robbing-Game-Studios#!/about" target="_blank">RGS developers</a>. I mainly do UI and i can code it, but im not a good scripter. The style that i work with is cartoony UI and futuristic but simple UI.
                 </p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Some of my work</h3>
-                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran(15)s.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran(24)r.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran(26)l.png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran (45).png" alt="some UI. not my best tho" style="max-width: 100%; height: auto; border-radius: 10px;">
-                <img src="C:\Users\pc\Downloads\GamePass Template.png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
-                <img src="C:\Users\pc\Downloads\New Project (29).png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
-                <img src="C:\Users\pc\Downloads\New Project (26).png" alt="some UI. not my best tho" style="max-width: 31%; height: auto; border-radius: 10px;">
-                <img src="C:\Users\pc\Documents\Portfolio\Capture d’écran (35).png" alt="SOME OF MY USER ITREFACE, its bad but trust me its good" style="max-width: 100%; height: auto; border-radius: 10px;">
             </div>
         </section>
         <section id="contact">
@@ -170,6 +199,43 @@
                 <div class="donate-item">
                     <h3>1000 Robux</h3>
                     <a href="https://www.roblox.com/game-pass/864305443" class="donate-button">Donate</a>
+                </div>
+            </div>
+        </section>
+        <section id="wwm">
+            <h2>Work with me</h2>
+            <div class="wwm-grid">
+                <div class="wwm-item">
+                    <h3>Scripter</h3>
+                    <a href="https://forms.gle/Quc8si7ejbnURjmC9" class="wwm-button">Apply</a>
+                </div>
+                <div class="wwm-item">
+                    <h3>Builder</h3>
+                    <a href="https://forms.gle/9zYDB3GdkhqvcVLW8" class="wwm-button">Apply</a>
+                </div>
+                <div class="wwm-item">
+                    <h3>Animator</h3>
+                    <a href="https://forms.gle/pRVJo8nCVYX1x2tX6" class="wwm-button">Apply</a>
+                </div>
+                <div class="wwm-item">
+                    <h3>Gfx</h3>
+                    <a href="https://www.roblox.com/game-pass/864305443" class="wwm-button">Apply</a>
+                </div>
+                <div class="wwm-item">
+                    <h3>Vfx</h3>
+                    <a href="https://www.roblox.com/game-pass/864305443" class="wwm-button">Apply</a>
+                </div>
+                <div class="wwm-item">
+                    <h3>Sfx</h3>
+                    <a href="https://www.roblox.com/game-pass/864305443" class="wwm-button">Apply</a>
+                </div>
+                <div class="wwm-item">
+                    <h3>Modeler</h3>
+                    <a href="https://forms.gle/YdZNdEh4ZVXZ1VvF7" class="wwm-button">Apply</a>
+                </div>
+                <div class="wwm-item">
+                    <h3>UI designer</h3>
+                    <a href="https://www.roblox.com/game-pass/864305443" class="wwm-button">Apply</a>
                 </div>
             </div>
         </section>
